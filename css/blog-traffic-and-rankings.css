@@ -1,0 +1,142 @@
+a {
+    text-decoration: none;
+    color: #5e72e4;
+    background-color: transparent;
+}
+
+.placeholder-item-1 {
+    box-shadow: 0 4px 10px 0 rgba(33, 33, 33, 0.15) !important;
+    border-radius: 4px;
+    position: relative !important;
+    overflow: hidden !important;
+    width: 100%;
+}
+
+.placeholder-item-1 { height: 200px; }
+
+.placeholder-item-1::before {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    left: -150px;
+    top: 0;
+    height: 100%;
+    width: 150px;
+    background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%) !important;
+    animation: load 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite !important;
+}
+
+/****/
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: 0px 0;
+  }
+  100% {
+    background-position: 100em 0;
+  }
+}
+
+.placeholder-h-200 {
+    height: 200px !important;
+}
+
+.placeholder-h-150 {
+    height: 150px !important;
+}
+
+.placeholder-h-100 {
+    height: 100px !important;
+}
+
+.placeholder-h-30 {
+    height: 30px !important;
+}
+
+.gradient-placeholder {
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: fff;
+  background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%); /*
+  linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);*/
+  /*height: 150px;*/
+  width: 100%;
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  -webkit-backface-visibility: hidden;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+}
+/****/
+
+.spa-item {
+    padding: 4px 0;
+    border-bottom: 1px solid #f4f5f7;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.timeframe-links a {
+    padding: 5px 12px;
+    background-color: #FFFFFF;
+    margin-right: 2px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.timeframe-links a:hover {
+    background-color: #e5e5e5;
+    color: #000000;
+    text-decoration: none;
+}
+
+.timeframe-deactivated {
+    cursor: not-allowed;
+}
+
+.timeframe-link-selected {
+    background-color: #e5e5e5 !important; /*#d3d3d3*/
+}
+
+.table-separator-border {
+    border-right: 1px #333 solid !important;
+}
+
+.stealth-mode, .stealth-mode:hover, .stealth-mode:focus {
+  color: transparent !important;
+  text-shadow: 0 0 12px rgba(0,0,0,0.7);
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+ul.subscription-info {
+    margin-top: 10px !important;
+    margin-left: 0px !important;
+    padding-left: 14px !important;
+    /*list-style-type: disc !important;*/
+}
+
+ul.subscription-info li {
+    margin-bottom: 10px !important;
+}
+
+.bp-listing-pagin-table {
+    font-size: 15px !important;
+}
